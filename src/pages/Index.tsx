@@ -6,46 +6,13 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import DepositCard from '@/components/DepositCard';
 import heroImage from '@/assets/hero-mining.jpg';
-import depositGold from '@/assets/deposit-gold.jpg';
-import depositIron from '@/assets/deposit-iron.jpg';
-import depositCopper from '@/assets/deposit-copper.jpg';
+import { deposits } from '@/data/deposits';
 import { Link } from 'react-router-dom';
 
 const Index = () => {
   const { t } = useLanguage();
 
-  const featuredDeposits = [
-    {
-      id: '1',
-      name: 'Serra Dourada',
-      location: 'Minas Gerais, Brasil',
-      area: '2.500 hectares',
-      mineral: 'Ouro',
-      reserves: '12.5 milhões de onças',
-      image: depositGold,
-      featured: true,
-    },
-    {
-      id: '2',
-      name: 'Vale Vermelho',
-      location: 'Pará, Brasil',
-      area: '5.200 hectares',
-      mineral: 'Minério de Ferro',
-      reserves: '850 milhões de toneladas',
-      image: depositIron,
-      featured: true,
-    },
-    {
-      id: '3',
-      name: 'Montanha Azul',
-      location: 'Bahia, Brasil',
-      area: '3.100 hectares',
-      mineral: 'Cobre',
-      reserves: '2.3 milhões de toneladas',
-      image: depositCopper,
-      featured: true,
-    },
-  ];
+  const featuredDeposits = deposits.filter(d => d.featured);
 
   return (
     <div className="min-h-screen bg-background">

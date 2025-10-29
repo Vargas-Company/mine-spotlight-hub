@@ -3,6 +3,7 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { Link } from 'react-router-dom';
 
 interface DepositCardProps {
   id: string;
@@ -70,9 +71,11 @@ const DepositCard = ({
       </CardContent>
       
       <CardFooter className="p-6 pt-0">
-        <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-          {t('listings.viewDetails')}
-        </Button>
+        <Link to={`/deposit/${id}`} className="w-full">
+          <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+            {t('listings.viewDetails')}
+          </Button>
+        </Link>
       </CardFooter>
     </Card>
   );

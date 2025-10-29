@@ -2,72 +2,12 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import DepositCard from '@/components/DepositCard';
 import { useLanguage } from '@/contexts/LanguageContext';
-import depositGold from '@/assets/deposit-gold.jpg';
-import depositIron from '@/assets/deposit-iron.jpg';
-import depositCopper from '@/assets/deposit-copper.jpg';
+import { deposits } from '@/data/deposits';
 
 const Listings = () => {
   const { t } = useLanguage();
 
-  const allDeposits = [
-    {
-      id: '1',
-      name: 'Serra Dourada',
-      location: 'Minas Gerais, Brasil',
-      area: '2.500 hectares',
-      mineral: 'Ouro',
-      reserves: '12.5 milhões de onças',
-      image: depositGold,
-      featured: true,
-    },
-    {
-      id: '2',
-      name: 'Vale Vermelho',
-      location: 'Pará, Brasil',
-      area: '5.200 hectares',
-      mineral: 'Minério de Ferro',
-      reserves: '850 milhões de toneladas',
-      image: depositIron,
-      featured: true,
-    },
-    {
-      id: '3',
-      name: 'Montanha Azul',
-      location: 'Bahia, Brasil',
-      area: '3.100 hectares',
-      mineral: 'Cobre',
-      reserves: '2.3 milhões de toneladas',
-      image: depositCopper,
-      featured: true,
-    },
-    {
-      id: '4',
-      name: 'Planalto Verde',
-      location: 'Goiás, Brasil',
-      area: '1.800 hectares',
-      mineral: 'Níquel',
-      reserves: '450 mil toneladas',
-      image: depositGold,
-    },
-    {
-      id: '5',
-      name: 'Cachoeira Prata',
-      location: 'Mato Grosso, Brasil',
-      area: '2.200 hectares',
-      mineral: 'Prata',
-      reserves: '8.2 milhões de onças',
-      image: depositIron,
-    },
-    {
-      id: '6',
-      name: 'Rio Cristal',
-      location: 'Amazonas, Brasil',
-      area: '4.500 hectares',
-      mineral: 'Bauxita',
-      reserves: '320 milhões de toneladas',
-      image: depositCopper,
-    },
-  ];
+  const allDeposits = deposits;
 
   return (
     <div className="min-h-screen bg-background">

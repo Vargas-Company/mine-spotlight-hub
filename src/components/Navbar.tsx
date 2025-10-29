@@ -16,6 +16,7 @@ const Navbar = () => {
     { code: 'pt' as const, label: 'Português' },
     { code: 'en' as const, label: 'English' },
     { code: 'es' as const, label: 'Español' },
+    { code: 'zh' as const, label: '中文' },
   ];
 
   return (
