@@ -59,7 +59,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Deposits */}
+      {/* Featured Jazidas */}
       <section className="py-20 container mx-auto px-4">
         <div className="flex justify-between items-center mb-12">
           <div>
