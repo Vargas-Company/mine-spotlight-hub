@@ -9,6 +9,7 @@ import Listings from "./pages/Listings";
 import DepositDetail from "./pages/DepositDetail";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/deposit/:id" element={<DepositDetail />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/login" element={<Login />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

@@ -7,12 +7,27 @@ import Footer from '@/components/Footer';
 import DepositCard from '@/components/DepositCard';
 import heroImage from '@/assets/hero-mining.jpg';
 import { deposits } from '@/data/deposits';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const Index = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
+  const [searchQuery, setSearchQuery] = useState('');
 
   const featuredDeposits = deposits.filter(d => d.featured);
+
+  const handleSearch = () => {
+    if (searchQuery.trim()) {
+      navigate(`/listings?search=${encodeURIComponent(searchQuery)}`);
+    }
+  };
+
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -44,8 +59,14 @@ const Index = () => {
               <Input 
                 placeholder={t('hero.search')}
                 className="bg-white/90 border-0 text-foreground placeholder:text-muted-foreground"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                onKeyPress={handleKeyPress}
               />
-              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
+              <Button 
+                className="bg-accent hover:bg-accent/90 text-accent-foreground"
+                onClick={handleSearch}
+              >
                 <Search className="h-5 w-5" />
               </Button>
             </div>

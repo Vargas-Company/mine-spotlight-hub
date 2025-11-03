@@ -22,10 +22,20 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Criar mensagem para WhatsApp
+    const whatsappMessage = `*Novo Contato - MineralVault*\n\n*Nome:* ${formData.name}\n*Email:* ${formData.email}\n*Telefone:* ${formData.phone || 'Não informado'}\n*Empresa:* ${formData.company || 'Não informado'}\n\n*Mensagem:*\n${formData.message}`;
+    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(whatsappMessage)}`;
+    
+    // Abrir WhatsApp
+    window.open(whatsappUrl, '_blank');
+    
     toast({
       title: t('contact.success'),
-      description: 'Nossa equipe entrará em contato em breve.',
+      description: 'Você será redirecionado para o WhatsApp.',
     });
+    
+    // Limpar formulário
     setFormData({ name: '', email: '', phone: '', company: '', message: '' });
   };
 

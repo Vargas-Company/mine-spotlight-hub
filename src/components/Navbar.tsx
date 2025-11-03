@@ -43,6 +43,11 @@ const Navbar = () => {
             <Link to="/contact" className="text-foreground hover:text-accent transition-colors">
               {t('nav.contact')}
             </Link>
+            <Link to="/login">
+              <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground">
+                Login
+              </Button>
+            </Link>
           </div>
 
           <div className="flex items-center gap-4">
