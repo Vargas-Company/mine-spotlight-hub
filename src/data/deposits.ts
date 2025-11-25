@@ -1,6 +1,6 @@
 import depositGold from '@/assets/deposit-gold.jpg';
 import depositIron from '@/assets/deposit-iron.jpg';
-import depositCopper from '@/assets/deposit-copper.jpg';
+import infrastructure from '@/assets/infrastructure.jpg';
 import jazidaSF1 from '@/assets/JazidaSF1.jpg';
 import quebrahonda from '@/assets/quebrahonda.jpeg';
 
@@ -76,7 +76,7 @@ export const deposits: Deposit[] = [
       zh: '电力可用，道路畅通，靠近城市中心，且该地区具有合格的劳动力。',
     },
     documentation: ['Levantamento Bibliográfico','Reconhecimento Preliminar','Levantamento Topográfico','Escavações','Mapeamento Geológico','Sondagens','Geofísica','Licença Ambiental','Amostragem e Análises Químicas','Avaliação de Reservas','Critérios para o bloqueio de reservas','Cálculo das Reservas' ],
-    gallery: [depositGold, depositIron, depositCopper],
+    gallery: [depositGold, depositIron, infrastructure],
   },
 
 
@@ -114,7 +114,7 @@ export const deposits: Deposit[] = [
       zh: '我们的未来项目专注于矿产的勘探与出口，主要以铜矿、铜电解板、银和金为重点。为实现这一目标，我们计划建设自己的采矿和选矿厂，以及用于铜电解板和其他矿产生产的工厂。本公司具备现代化设备和资源，能够开采并回收主要矿物（铜、金、银），同时对其他具有商业价值的矿物进行增值利用。',
     },
     documentation: ['Estudo de Impacto Ambiental', 'Plano de Lavra', 'Certificação de Qualidade', 'Mapa Geológico'],
-    gallery: [depositIron, depositGold, depositCopper],
+    gallery: [depositIron, depositGold, infrastructure],
   },
 
 
@@ -125,7 +125,7 @@ export const deposits: Deposit[] = [
     area: '231 hectares',
     mineral: 'Cobre',
     reserves: '2.5 milhões de toneladas',
-    image: depositCopper,
+    image: infrastructure,
     featured: true,
     description: {
       pt: 'Área com 231 hectares já está  com requerimento de Lavra',
@@ -152,7 +152,7 @@ export const deposits: Deposit[] = [
       zh: '路桥衡器（100 吨量程）及 60 平方米办公室；仓库 01（1,800 平方米）用于原料堆放；仓库 02（1,200 平方米）用于原料堆放；仓库 03（1,700 平方米）用于生产；仓库 04（1,200 平方米）作为工业车间、机械维修、轮胎库、油品库、清洗设施、卫生间、更衣室、食堂、物资库及燃料罐；仓库 05（1,000 平方米）作为综合物资仓库；生产区办公室（40 平方米）；居住及休闲用地（5,000 平方米）；工业园区（55,000 平方米）；采矿权 231.74 公顷（编号 XXXX/XXXX），处于采矿申请阶段；两座铁矿破碎中心，总处理能力可达 40,000 吨/月；用于细粉生产的破碎中心，产能可达 10,000 吨/月；12 m x 1.8 m 滚筒筛，产能 40,000 吨/月；采矿权 18.04 公顷（编号 XXXX/XXX），处于核准以实现 300,000 吨/年利用指南的许可阶段；两台 XCMG LW500 装载机（2021 年）；封闭闸门运营；包含 2,500,000 吨细粉库存；粒度 6.5–26 mm；231 公顷区域已提交采矿申请；我们直接与委托方/权利人合作。',
     },
     documentation: ['Alvará de Lavra: Concedido, garantindo operação plena de extração.','Licença Ambiental: Válida, atendendo a todos os requisitos legais e ambientais.','Licença de Operação: Concedida e válida.','Licença de Instalação: Concedida e válida.','Licença Prévia para Extração de Cobre: Concedida e válida.','Licença do Exército para Detonação: Concedida e válida.'],
-    gallery: [depositCopper, depositIron, depositGold],
+    gallery: [infrastructure, depositIron, depositGold],
   },
 
   // {
