@@ -44,82 +44,6 @@ export interface Deposit {
 export const deposits: Deposit[] = [
   {
     id: '1',
-    name: 'Mina Sao Francisco',
-    location: 'Curaçá, Bahia',
-    area: '996.46 hectares',
-    mineral: 'Cobre, quartzo',
-    reserves: '5 milhões de Toneladas',
-    image: jazidaSF1,
-    featured: true,
-    description: {
-      pt: 'A Mina de Sao Francisco é uma das jazidas de cobre mais promissoras do Brasil, localizada em uma região de fácil acesso com infraestrutura consolidada. O depósito apresenta teores elevados e geologia favorável para extração a céu aberto.',
-      en: 'The São Francisco Mine is one of Brazil\'s most promising copper deposits, located in an easily accessible region with established infrastructure. The deposit exhibits high grades and favorable geology for open-pit mining.',
-      es: 'La Mina São Francisco es una de las explotaciones de cobre más prometedoras de Brasil, ubicada en una región de fácil acceso con infraestructura consolidada. El depósito presenta leyes elevadas y geología favorable para la extracción a cielo abierto.',
-      zh: '圣弗朗西斯科矿是巴西最有前景的铜矿床之一，位于交通便利、基础设施完善的地区。该矿床品位高，地质条件有利于露天开采。',
-    },
-    specifications: {
-      grade: '0,7694% Cu',
-      depth: 'ate 700 metros',
-      extraction: 'Céu aberto / Underground',
-      accessibility: 'Rodovia pavimentada a 15km',
-    },
-    geology: {
-      pt: 'A minério da fazenda São Francisco será concentrado em usina através de processo convencional,constando das seguintes fases: britagem, peneiramento, estocagem/homogeneização, moagem, classificação, flotação, espessamento/filtragem e expedição.',
-      en: 'The ore from the São Francisco property will be processed at a concentrator using a conventional flowsheet, consisting of the following stages: crushing, screening, stockpiling/homogenization, grinding, classification, flotation, thickening/filtration and dispatch.',
-      es: 'El mineral de la fazenda São Francisco se concentrará en una planta mediante un flujo de proceso convencional, que consta de las siguientes etapas: trituración, cribado, apilamiento/homogeneización, molienda, clasificación, flotación, espesamiento/filtrado y expedición.',
-      zh: '圣弗朗西斯科矿场的矿石将通过常规工艺在选厂进行处理，工艺包括：破碎、筛分、堆存/均化、研磨、分级、浮选、浓缩/过滤和发运。',
-    },
-    infrastructure: {
-      pt: 'Energia elétrica disponível, estradas de acesso, proximidade a centros urbanos e mão de obra qualificada na região.',
-      en: 'Electric power is available, with access roads, proximity to urban centers, and a qualified workforce in the region.',
-      es: 'Energía eléctrica disponible, carreteras de acceso, proximidad a centros urbanos y mano de obra calificada en la región.',
-      zh: '电力可用，道路畅通，靠近城市中心，且该地区具有合格的劳动力。',
-    },
-    documentation: ['Levantamento Bibliográfico','Reconhecimento Preliminar','Levantamento Topográfico','Escavações','Mapeamento Geológico','Sondagens','Geofísica','Licença Ambiental','Amostragem e Análises Químicas','Avaliação de Reservas','Critérios para o bloqueio de reservas','Cálculo das Reservas' ],
-    gallery: [depositGold, depositIron, infrastructure],
-  },
-
-
-  {
-    id: '2',
-    name: 'Quebrada Honda 1 e 2',
-    location: ' Atacama. Província de Huasco, Chile',
-    area: '200 hectares',
-    mineral: 'cobre, cátodo de cobre, prata e ouro',
-    reserves: '10 milhões de toneladas',
-    image: quebrahonda,
-    featured: true,
-    description: {
-      pt: 'A jazida chilena representa uma oportunidade excepcional em vários setores minerais. Com reservas massivas de alta qualidade e localização estratégica próxima a portos de exportação.',
-      en: 'The Chilean deposit represents an exceptional opportunity across several mineral sectors, with massive, high-quality reserves and a strategic location close to export ports.',
-      es: 'El yacimiento chileno representa una oportunidad excepcional en varios sectores minerales, con reservas masivas y de alta calidad y una ubicación estratégica cercana a puertos de exportación.',
-      zh: '该智利矿床在多个矿产领域具有卓越的机会，拥有大规模高品质储量，并且地处靠近出口港口的战略位置。',
-    },
-    specifications: {
-      grade: '6% Co',
-      depth: '180 metros',
-      extraction: 'Céu aberto',
-      accessibility: 'Rodovia perto',
-    },
-    geology: {
-      pt: 'deposição de vários minerais depende basicamente da temperatura de fusão e do peso específico, de modo que, no fundo do depósito, no caso dasminas Quebrada Honda, podemos encontrar uma quantidade maior de ouro em comparação com cobre',
-      en: 'The deposition of various minerals essentially depends on melting temperature and specific gravity; therefore, at the base of the deposit—such as in the Quebrada Honda mines—it is possible to find a greater proportion of gold compared to copper.',
-      es: 'La deposición de varios minerales depende principalmente de la temperatura de fusión y del peso específico; por lo tanto, en la base del depósito—como en las minas Quebrada Honda—es posible encontrar una mayor proporción de oro en comparación con el cobre.',
-      zh: '多种矿物的沉积主要取决于熔点和比重；因此在矿床底部（例如Quebrada Honda矿床）金的比例可能高于铜。',
-    },
-    infrastructure: {
-      pt: 'Nossos projetos futuros são focados na exploração e exportação de minerais, com concentração em minério de cobre, cátodo de cobre, prata e ouro. Para alcançar esse objetivo, precisamos construir nossa própria planta de mineração e concentração, além de uma planta para produção de cátodo de cobre e outros minerais.Nossa empresa de mineração é capaz de extrair todo o material e, com máquinas e recursos modernos, extrair os minerais mais importantes, que são cobre, ouro e prata, além de aproveitar outros minerais que possuem valor e importância comercial.',
-      en: 'Our future projects are focused on exploration and export of minerals, concentrating on copper ore, copper cathode, silver and gold. To achieve this objective, we plan to build our own mining and concentration plant as well as a facility for copper cathode production and other minerals. Our mining company is equipped to extract the material and, with modern machinery and resources, recover the principal minerals—copper, gold and silver—while also valorizing other commercially significant minerals.',
-      es: 'Nuestros proyectos futuros están enfocados en la exploración y exportación de minerales, centrados en mineral de cobre, cátodo de cobre, plata y oro. Para lograr este objetivo, planeamos construir nuestra propia planta de minería y concentración, además de una planta para la producción de cátodo de cobre y otros minerales. Nuestra empresa minera está capacitada para extraer el material y, con maquinaria y recursos modernos, recuperar los minerales principales—cobre, oro y plata—y aprovechar otros minerales de valor comercial.',
-      zh: '我们的未来项目专注于矿产的勘探与出口，主要以铜矿、铜电解板、银和金为重点。为实现这一目标，我们计划建设自己的采矿和选矿厂，以及用于铜电解板和其他矿产生产的工厂。本公司具备现代化设备和资源，能够开采并回收主要矿物（铜、金、银），同时对其他具有商业价值的矿物进行增值利用。',
-    },
-    documentation: ['Estudo de Impacto Ambiental', 'Plano de Lavra', 'Certificação de Qualidade', 'Mapa Geológico'],
-    gallery: [depositIron, depositGold, infrastructure],
-  },
-
-
-  {
-    id: '3',
     name: 'Mineradora de Cobre',
     location: 'Minas Gerais, Brasil, quadrilatero ferrífero',
     area: '231 hectares',
@@ -153,6 +77,85 @@ export const deposits: Deposit[] = [
     },
     documentation: ['Alvará de Lavra: Concedido, garantindo operação plena de extração.','Licença Ambiental: Válida, atendendo a todos os requisitos legais e ambientais.','Licença de Operação: Concedida e válida.','Licença de Instalação: Concedida e válida.','Licença Prévia para Extração de Cobre: Concedida e válida.','Licença do Exército para Detonação: Concedida e válida.'],
     gallery: [infrastructure, depositIron, depositGold],
+  },
+
+
+  {
+    id: '2',
+    name: 'Mina Sao Francisco',
+    location: 'Curaçá, Bahia',
+    area: '996.46 hectares',
+    mineral: 'Cobre, quartzo',
+    reserves: '5 milhões de Toneladas',
+    image: jazidaSF1,
+    featured: true,
+    description: {
+      pt: 'A Mina de Sao Francisco é uma das jazidas de cobre mais promissoras do Brasil, localizada em uma região de fácil acesso com infraestrutura consolidada. O depósito apresenta teores elevados e geologia favorável para extração a céu aberto.',
+      en: 'The São Francisco Mine is one of Brazil\'s most promising copper deposits, located in an easily accessible region with established infrastructure. The deposit exhibits high grades and favorable geology for open-pit mining.',
+      es: 'La Mina São Francisco es una de las explotaciones de cobre más prometedoras de Brasil, ubicada en una región de fácil acceso con infraestructura consolidada. El depósito presenta leyes elevadas y geología favorable para la extracción a cielo abierto.',
+      zh: '圣弗朗西斯科矿是巴西最有前景的铜矿床之一，位于交通便利、基础设施完善的地区。该矿床品位高，地质条件有利于露天开采。',
+    },
+    specifications: {
+      grade: '0,7694% Cu',
+      depth: 'ate 700 metros',
+      extraction: 'Céu aberto / Underground',
+      accessibility: 'Rodovia pavimentada a 15km',
+    },
+    geology: {
+      pt: 'A minério da fazenda São Francisco será concentrado em usina através de processo convencional,constando das seguintes fases: britagem, peneiramento, estocagem/homogeneização, moagem, classificação, flotação, espessamento/filtragem e expedição.',
+      en: 'The ore from the São Francisco property will be processed at a concentrator using a conventional flowsheet, consisting of the following stages: crushing, screening, stockpiling/homogenization, grinding, classification, flotation, thickening/filtration and dispatch.',
+      es: 'El mineral de la fazenda São Francisco se concentrará en una planta mediante un flujo de proceso convencional, que consta de las siguientes etapas: trituración, cribado, apilamiento/homogeneización, molienda, clasificación, flotación, espesamiento/filtrado y expedición.',
+      zh: '圣弗朗西斯科矿场的矿石将通过常规工艺在选厂进行处理，工艺包括：破碎、筛分、堆存/均化、研磨、分级、浮选、浓缩/过滤和发运。',
+    },
+    infrastructure: {
+      pt: 'Energia elétrica disponível, estradas de acesso, proximidade a centros urbanos e mão de obra qualificada na região.',
+      en: 'Electric power is available, with access roads, proximity to urban centers, and a qualified workforce in the region.',
+      es: 'Energía eléctrica disponible, carreteras de acceso, proximidad a centros urbanos y mano de obra calificada en la región.',
+      zh: '电力可用，道路畅通，靠近城市中心，且该地区具有合格的劳动力。',
+    },
+    documentation: ['Levantamento Bibliográfico','Reconhecimento Preliminar','Levantamento Topográfico','Escavações','Mapeamento Geológico','Sondagens','Geofísica','Licença Ambiental','Amostragem e Análises Químicas','Avaliação de Reservas','Critérios para o bloqueio de reservas','Cálculo das Reservas' ],
+    gallery: [depositGold, depositIron, infrastructure],
+
+   
+  },
+
+
+  {
+    id: '3',
+    name: 'Quebrada Honda 1 e 2',
+    location: ' Atacama. Província de Huasco, Chile',
+    area: '200 hectares',
+    mineral: 'cobre, cátodo de cobre, prata e ouro',
+    reserves: '10 milhões de toneladas',
+    image: quebrahonda,
+    featured: true,
+    description: {
+      pt: 'A jazida chilena representa uma oportunidade excepcional em vários setores minerais. Com reservas massivas de alta qualidade e localização estratégica próxima a portos de exportação.',
+      en: 'The Chilean deposit represents an exceptional opportunity across several mineral sectors, with massive, high-quality reserves and a strategic location close to export ports.',
+      es: 'El yacimiento chileno representa una oportunidad excepcional en varios sectores minerales, con reservas masivas y de alta calidad y una ubicación estratégica cercana a puertos de exportación.',
+      zh: '该智利矿床在多个矿产领域具有卓越的机会，拥有大规模高品质储量，并且地处靠近出口港口的战略位置。',
+    },
+    specifications: {
+      grade: '6% Co',
+      depth: '180 metros',
+      extraction: 'Céu aberto',
+      accessibility: 'Rodovia perto',
+    },
+    geology: {
+      pt: 'deposição de vários minerais depende basicamente da temperatura de fusão e do peso específico, de modo que, no fundo do depósito, no caso dasminas Quebrada Honda, podemos encontrar uma quantidade maior de ouro em comparação com cobre',
+      en: 'The deposition of various minerals essentially depends on melting temperature and specific gravity; therefore, at the base of the deposit—such as in the Quebrada Honda mines—it is possible to find a greater proportion of gold compared to copper.',
+      es: 'La deposición de varios minerales depende principalmente de la temperatura de fusión y del peso específico; por lo tanto, en la base del depósito—como en las minas Quebrada Honda—es posible encontrar una mayor proporción de oro en comparación con el cobre.',
+      zh: '多种矿物的沉积主要取决于熔点和比重；因此在矿床底部（例如Quebrada Honda矿床）金的比例可能高于铜。',
+    },
+    infrastructure: {
+      pt: 'Nossos projetos futuros são focados na exploração e exportação de minerais, com concentração em minério de cobre, cátodo de cobre, prata e ouro. Para alcançar esse objetivo, precisamos construir nossa própria planta de mineração e concentração, além de uma planta para produção de cátodo de cobre e outros minerais.Nossa empresa de mineração é capaz de extrair todo o material e, com máquinas e recursos modernos, extrair os minerais mais importantes, que são cobre, ouro e prata, além de aproveitar outros minerais que possuem valor e importância comercial.',
+      en: 'Our future projects are focused on exploration and export of minerals, concentrating on copper ore, copper cathode, silver and gold. To achieve this objective, we plan to build our own mining and concentration plant as well as a facility for copper cathode production and other minerals. Our mining company is equipped to extract the material and, with modern machinery and resources, recover the principal minerals—copper, gold and silver—while also valorizing other commercially significant minerals.',
+      es: 'Nuestros proyectos futuros están enfocados en la exploración y exportación de minerales, centrados en mineral de cobre, cátodo de cobre, plata y oro. Para lograr este objetivo, planeamos construir nuestra propia planta de minería y concentración, además de una planta para la producción de cátodo de cobre y otros minerales. Nuestra empresa minera está capacitada para extraer el material y, con maquinaria y recursos modernos, recuperar los minerales principales—cobre, oro y plata—y aprovechar otros minerales de valor comercial.',
+      zh: '我们的未来项目专注于矿产的勘探与出口，主要以铜矿、铜电解板、银和金为重点。为实现这一目标，我们计划建设自己的采矿和选矿厂，以及用于铜电解板和其他矿产生产的工厂。本公司具备现代化设备和资源，能够开采并回收主要矿物（铜、金、银），同时对其他具有商业价值的矿物进行增值利用。',
+    },
+    documentation: ['Estudo de Impacto Ambiental', 'Plano de Lavra', 'Certificação de Qualidade', 'Mapa Geológico'],
+    gallery: [depositIron, depositGold, infrastructure],
+    
   },
 
   // {

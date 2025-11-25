@@ -18,7 +18,7 @@ const translations = {
     'hero.subtitle': 'Conectamos investidores e empresas às melhores reservas minerais do Brasil',
     'hero.cta': 'Explorar Jazidas',
     'hero.search': 'Buscar por mineral, localização...',
-    'listings.title': 'Jazidas Disponíveis',
+    'listings.title': 'Oportunidades Disponíveis',
     'listings.featured': 'Em Destaque',
     'listings.viewAll': 'Ver Todos',
     'listings.viewDetails': 'Ver Detalhes',
