@@ -44,7 +44,7 @@ export interface Deposit {
 export const deposits: Deposit[] = [
   {
     id: '1',
-    name: 'Mineradora de Cobre',
+    name: 'Mineradora de Ferro',
     location: 'Minas Gerais, Brasil, quadrilatero ferrífero',
     area: '231 hectares',
     mineral: 'Cobre',
